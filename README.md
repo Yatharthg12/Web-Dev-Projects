@@ -47,3 +47,5 @@ Expand with more interactive mini-projects
 
 Author
 Developed by Yatharth Garg.
+
+EOF
