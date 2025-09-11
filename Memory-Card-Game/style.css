@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* 🌌 Animated background */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(270deg, #2c3e50, #3498db, #8e44ad, #e67e22);
+  background-size: 800% 800%;
+  animation: gradientShift 18s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.game-container {
+  background: rgba(0,0,0,0.75);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.4);
+  text-align: center;
+  color: #fff;
+  width: 80%;
+  max-width: 650px;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+#difficulty {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#restart {
+  background: #00c853;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+}
+
+#restart:hover {
+  background: #009624;
+}
+
+.game-board {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.card {
+  background: #1f2937;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card.flipped {
+  background: #fff;
+  color: #000;
+  cursor: default;
+}
+
+.card.matched {
+  background: #27ae60;
+  color: #fff;
+  cursor: default;
+}
+
+.message {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  display: none;
+}
+/*EOF*/
