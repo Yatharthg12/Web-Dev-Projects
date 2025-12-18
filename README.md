@@ -30,7 +30,7 @@ JavaScript (ES6)
 
 How to Run:
 1.Clone the repository:
---git clone https://github.com/yourusername/web-dev-projects.git
+--git clone https://github.com/Yatharthg12/web-dev-projects.git
 2.Navigate into any project folder:
 --cd smart-calculator
 3.Open index.html in your browser.
